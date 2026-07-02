@@ -10,7 +10,7 @@
   	<url-pattern>/add</url-pattern>
   </servlet-mapping>
   
-    <servlet>
+   <servlet>
   	<servlet-name>LifeCycle</servlet-name>
   	<servlet-class>com.Abhinav.LifeCycle</servlet-class>
   </servlet>
@@ -18,5 +18,26 @@
   <servlet-mapping>
   	<servlet-name>LifeCycle</servlet-name>
   	<url-pattern>/lifecycle</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>SignIn</servlet-name>
+  	<servlet-class>com.RequestDispatcher.SignIn</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SignIn</servlet-name>
+  	<url-pattern>/sign-in</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Home</servlet-name>
+  	<servlet-class>com.RequestDispatcher.Home</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Home</servlet-name>
+  	<url-pattern>/home</url-pattern>
   </servlet-mapping>
 </web-app>
