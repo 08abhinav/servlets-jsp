@@ -9,4 +9,14 @@
   	<servlet-name>Add</servlet-name>
   	<url-pattern>/add</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>LifeCycle</servlet-name>
+  	<servlet-class>com.Abhinav.LifeCycle</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LifeCycle</servlet-name>
+  	<url-pattern>/lifecycle</url-pattern>
+  </servlet-mapping>
 </web-app>
