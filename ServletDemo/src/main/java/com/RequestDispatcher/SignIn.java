@@ -21,8 +21,8 @@ public class SignIn extends HttpServlet{
 		PrintWriter out = res.getWriter();
 		
 		if(password.equals(tempPassword)) {
-			RequestDispatcher rd = req.getRequestDispatcher("home");
-			rd.forward(req, res);
+			req.setAttribute("uname", uname);
+			req.getRequestDispatcher("home").forward(req, res);
 		}else {
 			out.println("Invalid password");
 		}

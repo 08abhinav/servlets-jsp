@@ -12,8 +12,11 @@ public class Home extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
 			
 			PrintWriter out = res.getWriter();
+			String uname = (String) req.getAttribute("uname");
+			
 			out.println("<h1>Login Successfull</h1>");
 			out.println("\n");
-			out.println("<h1>Welcome</h1>");
+			out.print("<h1>Welcome <u>" + uname + "</u></h1>");
+			
 		}
 }
