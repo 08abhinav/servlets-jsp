@@ -21,11 +21,11 @@
   </servlet-mapping>
   
   
+  <!--  
    <servlet>
   	<servlet-name>SignIn</servlet-name>
   	<servlet-class>com.RequestDispatcher.SignIn</servlet-class>
   </servlet>
-  
   <servlet-mapping>
   	<servlet-name>SignIn</servlet-name>
   	<url-pattern>/sign-in</url-pattern>
@@ -39,5 +39,27 @@
   <servlet-mapping>
   	<servlet-name>Home</servlet-name>
   	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  -->
+  
+   <servlet>
+  	<servlet-name>Home</servlet-name>
+  	<servlet-class>com.SessionManagement.Page2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Home</servlet-name>
+  	<url-pattern>/page2</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Page1</servlet-name>
+  	<servlet-class>com.SessionManagement.Page1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Page1</servlet-name>
+  	<url-pattern>/page1</url-pattern>
   </servlet-mapping>
 </web-app>
