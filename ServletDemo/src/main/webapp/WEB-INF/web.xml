@@ -62,4 +62,44 @@
   	<servlet-name>Page1</servlet-name>
   	<url-pattern>/page1</url-pattern>
   </servlet-mapping>
+  
+  
+  <!-- Servlet Config and Servlet Context -->
+  
+  <servlet>
+  	<servlet-name>Sample</servlet-name>
+  	<servlet-class>com.Servlet_Config_Context.Sample</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Sample</servlet-name>
+  	<url-pattern>/context-config</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Page2</servlet-name>
+  	<servlet-class>com.Servlet_Config_Context.Page2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Page2</servlet-name>
+  	<url-pattern>/page2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Page3</servlet-name>
+  	<servlet-class>com.Servlet_Config_Context.Page3</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Page3</servlet-name>
+  	<url-pattern>/page3</url-pattern>
+  </servlet-mapping>
+  
+  
+  <context-param>
+  	<param-name>Name</param-name>
+  	<param-value>Learning Servlet and JSP</param-value>
+  </context-param>
+  
 </web-app>
