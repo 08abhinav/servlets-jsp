@@ -12,16 +12,17 @@ public class Practice2 extends HttpServlet{
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		ServletContext ctx = getServletContext();
-		Integer count = (Integer) ctx.getAttribute("count");
+		Integer count;
 		
-		if(count == null) {
-			count = 0;
+		synchronized(ctx) {
+			count = (Integer) ctx.getAttribute("count");
+			if(count == null) {
+				count = 0;
+			}
+			
+			count += 1;
+			ctx.setAttribute("count", count);
 		}
-		
-		count += 1;
-		
-		ctx.setAttribute("count", count);
-		ctx.setAttribute("count", count);
 		
 		res.getWriter().println("Hits: " + count);
 	}
