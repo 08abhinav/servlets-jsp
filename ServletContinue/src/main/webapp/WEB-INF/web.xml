@@ -48,4 +48,23 @@
 		<servlet-name>Page3</servlet-name>
 		<url-pattern>/page3</url-pattern>
 	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Practice1</servlet-name>
+		<servlet-class>com.Abhinav.InterviewPractice.Practice1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Practice1</servlet-name>
+		<url-pattern>/practice</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Practice2</servlet-name>
+		<servlet-class>com.Abhinav.InterviewPractice.Practice2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Practice2</servlet-name>
+		<url-pattern>/practice2</url-pattern>
+	</servlet-mapping>
 </web-app>
