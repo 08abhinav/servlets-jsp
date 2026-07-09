@@ -7,7 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Welcome to View.jsp</h1>
-	<%= request.getParameter("id") %>
+	<h1>Tags in JSP</h1>
+	
+	<%--This is comment tag and the next tag is Declaration tag --%>
+	<%! String name = "view.jsp";%>
+	
+	<%--Scriptlet Tag--%>
+	<% 
+		out.println("This is inside Scriptlet Tag"+ "<br/>"+name+ "<br/>"	);
+	%>
+	
+	<%--Expression Tag --%>
+	<%=
+		100 + 100 
+	%>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>
