@@ -56,7 +56,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Practice1</servlet-name>
-		<url-pattern>/practice</url-pattern>
+		<url-pattern>/practice1</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -66,5 +66,23 @@
 	<servlet-mapping>
 		<servlet-name>Practice2</servlet-name>
 		<url-pattern>/practice2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Practice3</servlet-name>
+		<servlet-class>com.Abhinav.InterviewPractice.Practice3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Practice3</servlet-name>
+		<url-pattern>/practice3</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Student</servlet-name>
+		<servlet-class>com.Abhinav.MVCDemo.Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Student</servlet-name>
+		<url-pattern>/controller</url-pattern>
 	</servlet-mapping>
 </web-app>
